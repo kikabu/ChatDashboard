@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="main">
+    <div class="top-menu">
+      <div class="user-info">
+        <div class="profilePhoto">
+          <a href="#"><img src="img/profilePhoto.png" alt="profilePhoto"></a>
+        </div>
+        <div class="user-name">
+          <a href="#">Henry Jabbawockiez <img src="img/chevron-down.svg" alt="arrow"></a>
+        </div>
+      </div><!-- /user-info-->
+      <div class="navigation" id="menu">
+        <button class="link" href="#">
+          <svg class="icon">
+            <use xlink:href="img/icon.svg#home"></use>
+          </svg>
+          home</button>
+        <button class="link active" href="#">
+          <svg class="icon">
+            <use xlink:href="img/icon.svg#chat"></use>
+          </svg>
+          chat</button>
+        <button class="link" href="#">
+          <svg class="icon">
+            <use xlink:href="img/icon.svg#contact"></use>
+          </svg>
+          contact</button>
+        <button class="link" href="#">
+          <svg class="icon">
+            <use xlink:href="img/icon.svg#notifications"></use>
+          </svg>
+          notification</button>
+        <button class="link" href="#">
+          <svg class="icon">
+            <use xlink:href="img/icon.svg#calendar"></use>
+          </svg>
+          calendar</button>
+        <button class="link" href="#">
+          <svg class="icon">
+            <use xlink:href="img/icon.svg#settings"></use>
+          </svg>
+          settings</button>
+        <button class="link" href="#">
+          <svg class="icon">
+            <use xlink:href="img/icon.svg#logout"></use>
+          </svg>
+          log out</button>
+      </div><!-- /navigation-->
+    </div><!-- /TOP_MENU-->
+    <div class="chats">
+      <div class="all-chats">
+        <div class="title">
+          <div class="left">
+            <h2>Chats</h2>
+            <div class="filter">
+              <select>
+                <option>Recent Chats</option>
+                <option>New Chats</option>
+              </select>
+            </div>
+          </div>
+          <div class="right"><button class="newChat"> <img src="img/plus.svg" alt="plus"> create new chat</button></div>
+
+        </div><!-- /title -->
+        <div class="search">
+          <form action="post">
+            <input type="search" class="search-input" placeholder="Search">
+            <select class="search-select">
+              <option>messages</option>
+              <option>files</option>
+              <option>persons</option>
+              <option>links</option>
+            </select>
+          </form>
+        </div><!-- /search -->
+        <div class="chat-blocks">
+          <div class="chat-block">
+            <div class="content">
+              <div class="top">
+                <div class="user-photo">
+                  <div class="active"></div>
+                  <img src="img/1.png" alt="user-photo">
+                </div>
+                <div class="user-info">
+                  <div class="info">
+                    <h4>Luy Robin</h4>
+                    <div class="activity">
+                      <div class="writing">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <span>writes</span>
+                    </div>
+                  </div>
+                  <div class="last-activity"><span>1 minute ago</span></div>
+                </div><!-- /user-info-->
+              </div><!-- /top-->
+              <div class="bottom">
+                <div class="last-message">
+                  <p>Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On
+                    the
+                    Boundaries of Goods and Evils; finibus may also be translated as purposes). </p>
+                </div>
+                <div class="indicator">
+                  <span>2</span>
+                </div>
+              </div><!-- /bottom-->
+            </div>
+            <!--/content-->
+
+          </div><!-- chat-block 1 -->
+          <div class="chat-block">
+            <div class="content">
+              <div class="top">
+                <div class="user-photo">
+                  <div class="active"></div>
+                  <img src="img/2.png" alt="user-photo">
+                </div>
+                <div class="user-info">
+                  <div class="info">
+                    <h4>Jared Sunn</h4>
+                    <div class="activity">
+                      <div class="record"></div>
+                      <span>records voice message</span>
+                    </div>
+                  </div>
+                  <div class="last-activity"><span>1 minute ago</span></div>
+                </div><!-- /user-info-->
+              </div><!-- /top-->
+              <div class="bottom">
+                <div class="last-message">
+                  <div class="voice-message">
+                    <img src="img/mic.svg" alt="voice-message">
+                    <p>Voice message (01:15)</p>
+                  </div>
+                  <div class="file-indicator">
+                    <div class="files"><img src="img/file-text.svg" alt="file"><span>Files (x2)</span></div>
+                    <div class="photos"><img src="img/image.svg" alt="image"><span>Photo</span></div>
+                  </div>
+                </div>
+                <div class="indicator">
+                  <span>1</span>
+                </div>
+              </div><!-- /bottom-->
+            </div>
+            <!--/content-->
+          </div><!-- chat-block 2 -->
+          <div class=" opened-chat chat-block">
+            <div class="content">
+              <div class="top">
+                <div class="user-photo">
+                  <img src="img/3.png" alt="user-photo">
+                </div>
+                <div class="user-info">
+                  <div class="info">
+                    <h4>Nika Jerrardo</h4>
+                    <div class="activity">
+
+                      <span>last online 5 hours ago</span>
+                    </div>
+                  </div>
+                  <div class="last-activity"><span>3 days ago</span></div>
+                </div><!-- /user-info-->
+              </div><!-- /top-->
+              <div class="bottom">
+                <div class="last-message">
+                  <p>Cicero famously orated against his political opponent Lucius Sergius Catilina. </p>
+                </div>
+              </div><!-- /bottom-->
+            </div>
+            <!--/content-->
+          </div><!-- chat-block 3 -->
+          <div class="chat-block">
+            <div class="content">
+              <div class="top">
+                <div class="user-photo">
+                  <img src="img/4.png" alt="user-photo">
+                </div>
+                <div class="user-info">
+                  <div class="info">
+                    <h4>david Amrosa</h4>
+                    <div class="activity">
+                      <span>last online 5 hours ago</span>
+                    </div>
+                  </div>
+                  <div class="last-activity"><span>3 days ago</span></div>
+                </div><!-- /user-info-->
+              </div><!-- /top-->
+              <div class="bottom">
+                <div class="last-message">
+                  <p>Cicero famously orated against his political opponent Lucius Sergius Catilina. </p>
+                  <div class="file-indicator">
+                    <div class="film"><img src="img/film.svg" alt="film"><span>Video (x3)</span></div>
+                  </div>
+                </div>
+
+              </div><!-- /bottom-->
+            </div>
+            <!--/content-->
+          </div><!-- chat-block 4 -->
+        </div><!-- /chat-blokS -->
+      </div><!-- /ALL_CHATS-->
+      <div class="open-chat">
+        <div class="user-info-open">
+          <div class="left">
+            <div class="user-photo">
+              <img src="img/3.png" alt="user-photo">
+            </div>
+            <div class="user-info">
+              <div class="info">
+                <h4>Nika Jerrardo</h4>
+                <div class="activity">
+                  <span>last online 5 hours ago</span>
+                </div>
+              </div>
+            </div><!-- /user-info-->
+          </div><!-- /left-->
+          <div class="right">
+            <div class="icons">
+              <button><img src="img/attach-2.svg" alt="attachmant"></button>
+              <button><img src="img/more-vertical.svg" alt="more"></button>
+            </div>
+          </div><!-- /right-->
+
+        </div>
+        <!--/user-info-open-->
+        <div class="correspondens">
+          <div class="friend-message">
+            <div class="user-photo-min">
+              <img src="img/3.png" alt="user">
+            </div>
+            <div class="messages">
+              <div class="message">
+                <div class="sms">
+                  <div class="text-message">
+                    <p>Hello! Finally found the time to write to you) I need your help in creating interactive
+                      animations
+                      for
+                      my mobile application.
+                    </p>
+
+                  </div>
+                </div><!-- /sms-->
+                <div class="more">
+                  <button><img src="img/more-horizontal.svg" alt="more"></button>
+                </div>
+              </div>
+              <!--/message1-->
+              <div class="message">
+                <div class="sms">
+                  <div class="text-message">
+                    <p>Can I send you files?
+                    </p>
+                  </div>
+                  <div class="when">
+                    <span>4 days ago</span>
+                  </div>
+                </div>
+                <!--sms-->
+                <div class="more">
+                  <button><img src="img/more-horizontal.svg" alt="more"></button>
+                </div>
+              </div><!-- /message2-->
+
+            </div><!-- /messages-->
+          </div>
+          <!--/friend-message-->
+          <div class="my-message">
+            <div class="delivery">
+              <img src="img/all-done.svg" alt="done">
+            </div>
+            <div class="messages">
+              <div class="message">
+                <div class="sms">
+                  <div class="text-message">
+                    <p>Hey! Okay, send out.
+                    </p>
+                  </div>
+                  <div class="when">
+                    <span>4 days ago</span>
+                  </div>
+                </div><!-- /sms-->
+                <div class="more">
+                  <button><img src="img/more-horizontal.svg" alt="more"></button>
+                </div>
+              </div><!--/message-->
+              
+            </div><!-- /messages-->
+            
+          </div>
+          <!--/my-message-->
+           <div class="friend-message">
+             <div class="user-photo-min">
+               <img src="img/3.png" alt="user">
+             </div>
+             <div class="messages">
+               <div class="message">
+                 <div class="sms">
+                   <div class="text-message">
+                     <div class="attach">
+                       <img src="img/file.svg" alt="file">
+                       <div class="file-info">
+                       <p>Style.zip</p>
+                       <span>41.36 Mb</span>
+                     </div><!-- /file-info-->
+                     </div><!-- /attach-->
+                     
+                   </div>
+                   <div class="when">
+                     <span>4 days ago</span>
+                   </div>
+                 </div>
+                 <!--sms-->
+                 <div class="more">
+                   <button><img src="img/more-horizontal.svg" alt="more"></button>
+                 </div>
+               </div><!-- /message-->
+
+             </div><!-- /messages-->
+           </div>
+           <!--/friend-message-->
+<div class="day-line"> 3 days ago</div>
+
+           <div class="my-message">
+             <div class="delivery">
+               <img src="img/all-done.svg" alt="done">
+             </div>
+             <div class="messages">
+               <div class="message">
+                 <div class="sms">
+                   <div class="text-message">
+                     <p>Hello! I tweaked everything you asked. I am sending the finished file.</p>
+                     <div class="attach-file">
+                       <a href="#">(52.05 Mb) New_Style.zip <img src="img/file2.svg" alt="file"></a>
+                     </div>
+                     
+                   </div>
+                   <div class="when">
+                     <span>3 days ago</span>
+                   </div>
+                 </div><!-- /sms-->
+                 <div class="more">
+                   <button><img src="img/more-horizontal.svg" alt="more"></button>
+                 </div>
+               </div>
+               <!--/message-->
+
+             </div><!-- /messages-->
+
+           </div>
+           <!--/my-message-->
+
+        </div>
+        <!--/correspondens-->
+
+        <div class="newMessage">
+          
+        </div><!-- /newMessage-->
+
+      </div><!-- /OPEN_CHAT-->
+    </div><!-- /CHATS-->
+
+  </div>
+  <!--/MAIN-->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
